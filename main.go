@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/emersion/go-ical"
 	"github.com/martin-sucha/timezones"
-	"github.com/martin-sucha/vtimezone2go/vtimezone"
+	"github.com/martin-sucha/vtimezone2tzif/vtimezone"
 	"io"
 	"os"
 )

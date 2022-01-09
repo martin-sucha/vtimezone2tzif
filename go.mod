@@ -1,4 +1,4 @@
-module github.com/martin-sucha/vtimezone2go
+module github.com/martin-sucha/vtimezone2tzif
 
 go 1.17
 
