@@ -14,11 +14,11 @@ import (
 func TestToLocationTemplate(t *testing.T) {
 	tests := []struct {
 		filename string
-		expected timezones.LocationTemplate
+		expected timezones.Template
 	}{
 		{
 			filename: "go49951.ical",
-			expected: timezones.LocationTemplate{
+			expected: timezones.Template{
 				Name:    "go49951.ical",
 				Zones:   nil,
 				Changes: nil,
@@ -63,7 +63,7 @@ func TestToLocationTemplate(t *testing.T) {
 	}
 }
 
-var benchLoc *timezones.LocationTemplate
+var benchLoc *timezones.Template
 
 func BenchmarkToLocationTemplate(b *testing.B) {
 	data, err := os.ReadFile(filepath.Join("testdata", "go49951.ical"))

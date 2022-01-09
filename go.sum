@@ -1,6 +1,6 @@
 github.com/emersion/go-ical v0.0.0-20211103111159-f16f27911f39 h1:z8/rAgWs7JTxfMlGmyvaQYYsoHPoMglGvMJPab3JG4U=
 github.com/emersion/go-ical v0.0.0-20211103111159-f16f27911f39/go.mod h1:2MKFUgfNMULRxqZkadG1Vh44we3y5gJAtTBlVsx1BKQ=
-github.com/martin-sucha/timezones v0.0.0-20220109174515-b21c71283366 h1:71lWcj7V+nOgfr7VIDJQzseV3grH1Wq9i5ezcHTPs5o=
-github.com/martin-sucha/timezones v0.0.0-20220109174515-b21c71283366/go.mod h1:ED/dhSRc2rcPPW+fu8t8/HgZT6lvMsw7kcUo4zsvGlc=
+github.com/martin-sucha/timezones v0.0.0-20220109180317-38736c1dca91 h1:UslDYQJ0nrpb41W4Vp42BmKrDvRQihW7/T/DW0fQzeI=
+github.com/martin-sucha/timezones v0.0.0-20220109180317-38736c1dca91/go.mod h1:ED/dhSRc2rcPPW+fu8t8/HgZT6lvMsw7kcUo4zsvGlc=
 github.com/teambition/rrule-go v1.7.2 h1:goEajFWYydfCgavn2m/3w5U+1b3PGqPUHx/fFSVfTy0=
 github.com/teambition/rrule-go v1.7.2/go.mod h1:mBJ1Ht5uboJ6jexKdNUJg2NcwP8uUMNvStWXlJD3MvU=

@@ -12,8 +12,8 @@ import (
 	"time"
 )
 
-func ToLocationTemplate(name string, vTimezone *ical.Component) (*timezones.LocationTemplate, error) {
-	lt := timezones.LocationTemplate{
+func ToLocationTemplate(name string, vTimezone *ical.Component) (*timezones.Template, error) {
+	lt := timezones.Template{
 		Name: name,
 	}
 
@@ -204,7 +204,7 @@ func (z *zoneRule) roption() (*rrule.ROption, error) {
 	return rrule.StrToROptionInLocation(z.rrule.Value, fromLoc)
 }
 
-func addZones(lt *timezones.LocationTemplate, rule zoneRule) error {
+func addZones(lt *timezones.Template, rule zoneRule) error {
 	roption, err := rule.roption()
 	if err != nil {
 		return err
@@ -229,7 +229,7 @@ func addZones(lt *timezones.LocationTemplate, rule zoneRule) error {
 	return nil
 }
 
-func addExtendRules(lt *timezones.LocationTemplate, stdRule, dstRule extendRuleSlot) error {
+func addExtendRules(lt *timezones.Template, stdRule, dstRule extendRuleSlot) error {
 	// TODO check that extend rules start after other rules
 	if !stdRule.present && dstRule.present {
 		return fmt.Errorf("daylight saving rule without standard rule is not supported")
