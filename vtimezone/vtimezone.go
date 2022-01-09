@@ -1,3 +1,4 @@
+// Package vtimezone converts a VTIMEZONE to tzdata zone template.
 package vtimezone
 
 import (
@@ -12,6 +13,7 @@ import (
 	"time"
 )
 
+// ToLocationTemplate converts a VTIMEZONE to timezones.Template.
 func ToLocationTemplate(name string, vTimezone *ical.Component) (*timezones.Template, error) {
 	lt := timezones.Template{
 		Name: name,
